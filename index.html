@@ -1,118 +1,150 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#124c3a">
-<title>Qur'an Quest V6 — Juz 30</title>
+<title>Qur'an Quest V7 — Juz 30</title>
 <style>
 :root{--green:#155b43;--deep:#103d30;--gold:#e8bd68;--bg:#f3f7f3;--card:#fff;--ink:#17382d;--muted:#687970;--line:#e1eae3;--good:#e5f5e9;--bad:#fff0ed}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}header{background:linear-gradient(125deg,var(--deep),#237653);color:#fff;padding:28px 18px 42px;text-align:center}.eyebrow{font-size:11px;letter-spacing:3px;color:#c9e7d6;font-weight:800}h1{font-size:clamp(28px,5vw,42px);margin:7px 0}.hero{max-width:680px;margin:auto;color:#e0f0e6}.wrap{max-width:1000px;margin:-20px auto 40px;padding:0 14px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:14px;box-shadow:0 8px 24px #163b2a0a}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.stat{background:#f1f7f2;border-radius:12px;padding:12px}.stat b{display:block;color:var(--green);font-size:22px}.muted,.note{color:var(--muted);font-size:12px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px}label{font-size:11px;font-weight:850;color:var(--muted);display:block;margin:0 0 6px}select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fbfdfb;color:var(--ink);font:inherit}button{border:0;border-radius:11px;padding:12px 16px;background:var(--green);color:white;font-weight:800;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}.soft{background:#e7f2e9;color:var(--green)}.plain{background:#eff3ef;color:var(--ink)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.tag{display:inline-block;border-radius:30px;background:#e8f2e9;color:var(--green);padding:5px 9px;font-size:11px;font-weight:800}.hide{display:none!important}.quizhead{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13px;color:var(--muted);font-weight:750}.bar{height:8px;background:#edf1ed;border-radius:9px;overflow:hidden;margin:13px 0 20px}.bar span{display:block;height:100%;background:var(--gold);width:0}.q{font-size:clamp(19px,3vw,25px);font-weight:850;line-height:1.45;margin:12px 0}.arabic{font-family:"Noto Naskh Arabic","Amiri",serif;font-size:clamp(27px,5vw,39px);line-height:1.9;direction:rtl;text-align:right;background:#f7faf7;padding:18px;border:1px solid var(--line);border-radius:14px;margin:12px 0}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{background:#f8faf8;border:1px solid var(--line);color:var(--ink);text-align:left;min-height:56px}.answer.correct{background:var(--good);border-color:#7cb58a}.answer.wrong{background:var(--bad);border-color:#dc968a}.feedback{display:none;padding:13px;border-radius:12px;margin-top:13px;line-height:1.6}.feedback.show{display:block}.feedback.good{background:var(--good)}.feedback.bad{background:var(--bad)}.result{text-align:center}.score{font-size:50px;font-weight:900;color:var(--green)}.surahlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:8px}.surahitem{border:1px solid var(--line);border-radius:10px;padding:9px;font-size:13px}.surahitem b{color:var(--green)}footer a{color:var(--green)}@media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}.answers{grid-template-columns:1fr}.card{padding:15px}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+header{background:linear-gradient(125deg,var(--deep),#237653);color:#fff;padding:28px 18px 42px;text-align:center}.eyebrow{font-size:11px;letter-spacing:3px;color:#c9e7d6;font-weight:800}
+h1{font-size:clamp(28px,5vw,42px);margin:7px 0}.hero{max-width:680px;margin:auto;color:#e0f0e6}
+.wrap{max-width:1000px;margin:-20px auto 40px;padding:0 14px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:14px;box-shadow:0 8px 24px #163b2a0a}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.stat{background:#f1f7f2;border-radius:12px;padding:12px}.stat b{display:block;color:var(--green);font-size:22px}
+.muted,.note{color:var(--muted);font-size:12px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px}
+label{font-size:11px;font-weight:850;color:var(--muted);display:block;margin:0 0 6px}select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fbfdfb;color:var(--ink);font:inherit}
+button{border:0;border-radius:11px;padding:12px 16px;background:var(--green);color:white;font-weight:800;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}
+.soft{background:#e7f2e9;color:var(--green)}.plain{background:#eff3ef;color:var(--ink)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.tag{display:inline-block;border-radius:30px;background:#e8f2e9;color:var(--green);padding:5px 9px;font-size:11px;font-weight:800}.hide{display:none!important}
+.quizhead{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13px;color:var(--muted);font-weight:750}
+.bar{height:8px;background:#edf1ed;border-radius:9px;overflow:hidden;margin:13px 0 20px}.bar span{display:block;height:100%;background:var(--gold);width:0}
+.q{font-size:clamp(19px,3vw,25px);font-weight:850;line-height:1.45;margin:12px 0}
+.arabic{font-family:"Noto Naskh Arabic","Amiri",serif;font-size:clamp(27px,5vw,39px);line-height:1.9;direction:rtl;text-align:right;background:#f7faf7;padding:18px;border:1px solid var(--line);border-radius:14px;margin:12px 0}
+.latin{font-size:16px;line-height:1.9;background:#fffaf0;border:1px solid #f0e3c7;border-radius:12px;padding:13px 15px;margin:10px 0;color:#584323}
+.translation{font-size:14px;line-height:1.7;background:#f4f7fb;border:1px solid #e2e9f2;border-radius:12px;padding:12px 15px;margin:10px 0}
+.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{background:#f8faf8;border:1px solid var(--line);color:var(--ink);text-align:left;min-height:56px}
+.answer.correct{background:var(--good);border-color:#7cb58a}.answer.wrong{background:var(--bad);border-color:#dc968a}
+.feedback{display:none;padding:13px;border-radius:12px;margin-top:13px;line-height:1.6}.feedback.show{display:block}.feedback.good{background:var(--good)}.feedback.bad{background:var(--bad)}
+.result{text-align:center}.score{font-size:50px;font-weight:900;color:var(--green)}.surahlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:8px}
+.surahitem{border:1px solid var(--line);border-radius:10px;padding:9px;font-size:13px}.surahitem b{color:var(--green)}footer a{color:var(--green)}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}.answers{grid-template-columns:1fr}.card{padding:15px}}
 </style></head>
 <body>
-<header><div class="eyebrow">FERSUS LEARNING • JUZ 30</div><h1>Qur'an Quest <span style="color:#f0ce83">V6.1</span></h1><p class="hero">Belajar, memahami, dan menguatkan hafalan Al-Qur'an. Selangkah demi selangkah, insyaAllah.</p></header>
+<header><div class="eyebrow">FERSUS LEARNING • JUZ 30</div><h1>Qur'an Quest <span style="color:#f0ce83">V7</span></h1><p class="hero">Belajar, memahami, membaca, dan menguatkan hafalan Al-Qur'an. Selangkah demi selangkah, insyaAllah.</p></header>
 <main class="wrap">
 <section class="card" id="home">
- <div class="stats"><div class="stat"><b>37</b><span class="muted">Surah Juz 30</span></div><div class="stat"><b>6</b><span class="muted">Mode belajar</span></div><div class="stat"><b id="best">0%</b><span class="muted">Akurasi terbaik</span></div><div class="stat"><b id="sessions">0</b><span class="muted">Sesi selesai</span></div></div>
- <h2>Mulai perjalanan belajar</h2>
- <div class="grid">
-  <div><label>MODE</label><select id="mode"><option value="mix">Campuran</option><option value="meaning">Arti nama surah</option><option value="order">Urutan surah</option><option value="count">Jumlah ayat</option><option value="verse">Sambung ayat — sampel terpilih</option><option value="translation">Makna ayat — sampel terpilih</option></select></div>
-  <div><label>TINGKAT</label><select id="level"><option>Pemula</option><option>Menengah</option><option>Mahir</option><option>Hafiz Challenge</option></select></div>
-  <div><label>FOKUS SURAH</label><select id="focus"><option value="all">Semua surah</option></select></div>
-  <div><label>JUMLAH SOAL</label><select id="qty"><option>10</option><option selected>15</option><option>20</option><option>30</option></select></div>
-  <div><label>TIMER</label><select id="timer"><option value="0">Tanpa timer</option><option value="30">30 detik</option><option value="20">20 detik</option><option value="15">15 detik</option></select></div>
- </div>
- <div class="actions"><button id="begin">Mulai Quest</button><button class="soft" id="hafalan">Mode Hafalan</button><button class="plain" id="catalog">Daftar 37 Surah</button></div>
- <p class="note">Mode Sambung Ayat memuat pasangan ayat berurutan dari 37 surah melalui sumber data daring. Cakupan bertingkat: Pemula (108–114), Menengah (103–114), Mahir (93–114), Hafiz Challenge (78–114). Membutuhkan internet saat memulai mode ini. Soal metadata dibuat dari nama, urutan, dan jumlah ayat. Untuk tilawah dan hafalan, verifikasi bacaan pada mushaf serta guru Al-Qur'an.</p>
+<div class="stats"><div class="stat"><b>37</b><span class="muted">Surah Juz 30</span></div><div class="stat"><b>6</b><span class="muted">Mode belajar</span></div><div class="stat"><b id="best">0%</b><span class="muted">Akurasi terbaik</span></div><div class="stat"><b id="sessions">0</b><span class="muted">Sesi selesai</span></div></div>
+<h2>Mulai perjalanan belajar</h2>
+<div class="grid">
+<div><label>MODE</label><select id="mode"><option value="mix">Campuran</option><option value="meaning">Arti nama surah</option><option value="order">Urutan surah</option><option value="count">Jumlah ayat</option><option value="verse">Sambung ayat</option><option value="translation">Makna ayat</option></select></div>
+<div><label>TINGKAT</label><select id="level"><option>Pemula</option><option>Menengah</option><option>Mahir</option><option>Hafiz Challenge</option></select></div>
+<div><label>FOKUS SURAH</label><select id="focus"><option value="all">Semua surah</option></select></div>
+<div><label>JUMLAH SOAL</label><select id="qty"><option>10</option><option selected>15</option><option>20</option><option>30</option></select></div>
+<div><label>TIMER</label><select id="timer"><option value="0">Tanpa timer</option><option value="30">30 detik</option><option value="20">20 detik</option><option value="15">15 detik</option></select></div>
+</div>
+<div class="actions"><button id="begin">Mulai Quest</button><button class="soft" id="hafalan">Mode Hafalan</button><button class="plain" id="catalog">Daftar 37 Surah</button></div>
+<p class="note">Mode Sambung Ayat dan Makna Ayat memerlukan internet untuk mengambil data ayat. Bacaan Latin membantu mengenali pelafalan, tetapi bukan pengganti belajar tajwid, mendengar qari, atau talaqqi kepada guru. Periksa bacaan pada mushaf standar.</p>
 </section>
 <section class="card hide" id="quiz">
- <div class="quizhead"><span id="progressText">Soal 1</span><span><span class="tag" id="levelText">Pemula</span> <span id="time"></span></span></div><div class="bar"><span id="bar"></span></div>
- <div class="muted" id="kind"></div><div class="q" id="question"></div><div class="arabic hide" id="arabic"></div><div class="answers" id="answers"></div>
- <div class="feedback" id="feedback"></div><div class="actions"><button id="next" disabled>Berikutnya</button><button class="plain" id="end">Akhiri sesi</button></div>
+<div class="quizhead"><span id="progressText">Soal 1</span><span><span class="tag" id="levelText">Pemula</span> <span id="time"></span></span></div>
+<div class="bar"><span id="bar"></span></div><div class="muted" id="kind"></div><div class="q" id="question"></div>
+<div class="arabic hide" id="arabic" lang="ar"></div><div class="latin hide" id="latin"></div><div class="translation hide" id="translationText"></div>
+<div class="answers" id="answers"></div><div class="feedback" id="feedback"></div>
+<div class="actions"><button id="next" disabled>Berikutnya</button><button class="plain" id="end">Akhiri sesi</button></div>
 </section>
 <section class="card hide" id="results"></section>
 <section class="card hide" id="memory">
- <div class="quizhead"><span class="tag">Mode Hafalan</span><span class="muted" id="memoryRef"></span></div><h2 id="memoryName">Latihan potongan ayat</h2>
- <div class="arabic" id="memoryText"></div><p class="muted" id="memoryMeaning"></p>
- <div class="actions"><button id="showNext">Buka potongan berikutnya</button><button class="soft" id="newVerse">Ayat latihan lain</button><button class="plain" id="return">Menu utama</button></div>
- <p class="note">Gunakan tombol untuk membuka potongan berikutnya setelah mencoba mengingatnya. Latihan ini bukan pengganti talaqqi, tajwid, atau koreksi guru.</p>
+<div class="quizhead"><span class="tag">Mode Hafalan</span><span class="muted" id="memoryRef"></span></div><h2 id="memoryName">Latihan potongan ayat</h2>
+<div class="arabic" id="memoryText" lang="ar"></div><div class="latin" id="memoryLatin"></div><p class="translation" id="memoryMeaning"></p>
+<div class="actions"><button id="showNext">Sembunyikan bacaan Latin</button><button class="soft" id="newVerse">Ayat latihan lain</button><button class="plain" id="return">Menu utama</button></div>
+<p class="note">Coba baca dan hafalkan terlebih dahulu. Gunakan mushaf serta bimbingan guru untuk memastikan makhraj dan tajwid.</p>
 </section>
 <section class="card hide" id="catalogPanel"><h2>37 Surah dalam Juz 30</h2><div class="surahlist" id="surahList"></div><div class="actions"><button class="plain" id="closeCatalog">Tutup daftar</button></div></section>
-<section class="card"><b>Rujukan utama</b><p class="note">Pemeriksaan teks Arab dan terjemahan: <a href="https://quran.kemenag.go.id/" target="_blank" rel="noopener">Qur'an Kemenag</a>. Gunakan mushaf standar Indonesia sebagai rujukan bacaan. Teks latihan di aplikasi ini bersifat contoh belajar, bukan edisi mushaf.</p><p class="note">© Qur'an Quest V6 • feribatahan@gmail.com</p></section>
+<section class="card"><b>Rujukan utama</b><p class="note">Data ayat dan terjemahan dimuat dari API e-Qur'an Indonesia. Untuk verifikasi teks Arab, terjemahan, dan bacaan, silakan bandingkan dengan <a href="https://quran.kemenag.go.id/" target="_blank" rel="noopener">Qur'an Kemenag</a> dan mushaf standar Indonesia.</p><p class="note">© Qur'an Quest V7 • feribatahan@gmail.com</p></section>
 </main>
 <script>
+"use strict";
 const S=[
 ["An-Naba’",40,"Berita besar"],["An-Nazi‘at",46,"Malaikat yang mencabut"],["‘Abasa",42,"Ia bermuka masam"],["At-Takwir",29,"Menggulung"],["Al-Infitar",19,"Terbelah"],["Al-Mutaffifin",36,"Orang-orang yang curang"],["Al-Insyiqaq",25,"Terbelah"],["Al-Buruj",22,"Gugusan bintang"],["At-Tariq",17,"Yang datang pada malam hari"],["Al-A‘la",19,"Yang paling tinggi"],["Al-Gasyiyah",26,"Hari yang meliputi"],["Al-Fajr",30,"Fajar"],["Al-Balad",20,"Negeri"],["Asy-Syams",15,"Matahari"],["Al-Lail",21,"Malam"],["Ad-Duha",11,"Waktu duha"],["Asy-Syarh",8,"Kelapangan"],["At-Tin",8,"Buah tin"],["Al-‘Alaq",19,"Segumpal darah"],["Al-Qadr",5,"Kemuliaan"],["Al-Bayyinah",8,"Bukti nyata"],["Az-Zalzalah",8,"Guncangan"],["Al-‘Adiyat",11,"Kuda yang berlari kencang"],["Al-Qari‘ah",11,"Hari yang menggetarkan"],["At-Takasur",8,"Bermegah-megahan"],["Al-‘Asr",3,"Masa"],["Al-Humazah",9,"Pengumpat"],["Al-Fil",5,"Gajah"],["Quraisy",4,"Suku Quraisy"],["Al-Ma‘un",7,"Barang berguna"],["Al-Kausar",3,"Nikmat yang banyak"],["Al-Kafirun",6,"Orang-orang kafir"],["An-Nasr",3,"Pertolongan"],["Al-Lahab",5,"Gejolak api"],["Al-Ikhlas",4,"Ikhlas"],["Al-Falaq",5,"Waktu subuh"],["An-Nas",6,"Manusia"]];
-const V=[
-{n:"Al-Ikhlas",r:"112:1–2",a:"قُلْ هُوَ اللّٰهُ اَحَدٌۚ",b:"اَللّٰهُ الصَّمَدُۚ",m:"Katakanlah (Muhammad), “Dialah Allah, Yang Maha Esa.”"},
-{n:"Al-Falaq",r:"113:1–2",a:"قُلْ اَعُوْذُ بِرَبِّ الْفَلَقِۙ",b:"مِنْ شَرِّ مَا خَلَقَۙ",m:"Katakanlah, “Aku berlindung kepada Tuhan yang menguasai subuh (fajar).”"},
-{n:"An-Nas",r:"114:1–2",a:"قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ",b:"مَلِكِ النَّاسِۙ",m:"Katakanlah, “Aku berlindung kepada Tuhannya manusia.”"},
-{n:"Al-Kausar",r:"108:1–2",a:"اِنَّآ اَعْطَيْنٰكَ الْكَوْثَرَۗ",b:"فَصَلِّ لِرَبِّكَ وَانْحَرْۗ",m:"Sungguh, Kami telah memberimu (Muhammad) nikmat yang banyak."},
-{n:"Al-‘Asr",r:"103:1–2",a:"وَالْعَصْرِۙ",b:"اِنَّ الْاِنْسَانَ لَفِيْ خُسْرٍۙ",m:"Demi masa."},
-{n:"Al-Ma‘un",r:"107:1–2",a:"اَرَءَيْتَ الَّذِيْ يُكَذِّبُ بِالدِّيْنِۗ",b:"فَذٰلِكَ الَّذِيْ يَدُعُّ الْيَتِيْمَۙ",m:"Tahukah kamu (orang) yang mendustakan agama?"},
-{n:"Al-Fil",r:"105:1–2",a:"اَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِاَصْحٰبِ الْفِيْلِۗ",b:"اَلَمْ يَجْعَلْ كَيْدَهُمْ فِيْ تَضْلِيْلٍۙ",m:"Tidakkah engkau memperhatikan bagaimana Tuhanmu telah bertindak terhadap pasukan bergajah?"}
-];
-const $=x=>document.getElementById(x);let bank=[],at=0,points=0,locked=false,timerId=null,seconds=0,mem=0,shown=false;
-let fullJuzAyat=null;
+const $=id=>document.getElementById(id);
+let bank=[],at=0,points=0,locked=false,timerId=null,seconds=0,fullJuzAyat=null,mem=null,latinVisible=true;
 const JUZ30=Array.from({length:37},(_,i)=>i+78);
+const shuffle=a=>{const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;};
+S.forEach((s,i)=>{const o=document.createElement("option");o.value=i;o.textContent=`${i+78}. ${s[0]}`;$("focus").append(o);});
+function levelSurahRange(level){if(level==="Pemula")return [108,109,110,111,112,113,114];if(level==="Menengah")return Array.from({length:12},(_,i)=>i+103);if(level==="Mahir")return Array.from({length:22},(_,i)=>i+93);return JUZ30;}
 async function loadJuz30Ayat(){
  if(fullJuzAyat)return fullJuzAyat;
  const results=await Promise.all(JUZ30.map(async no=>{
-   const res=await fetch(`https://equran.id/api/v2/surat/${no}`);
-   if(!res.ok)throw new Error("Gagal mengambil data surah "+no);
-   const json=await res.json(),d=json.data||json,verses=d.ayat||d.verses||[];
-   return verses.map((a,i)=>({surahNo:no,surahName:d.namaLatin||d.nama||S[no-78]?.[0]||("Surah "+no),ayahNo:a.nomorAyat||a.ayah||i+1,arab:a.teksArab||a.arab||a.text||"",translation:a.teksIndonesia||a.translation||""})).filter(a=>a.arab);
+  const res=await fetch(`https://equran.id/api/v2/surat/${no}`);
+  if(!res.ok)throw new Error("Gagal mengambil data surah "+no);
+  const json=await res.json(),d=json.data||json,verses=d.ayat||d.verses||[];
+  return verses.map((a,i)=>({surahNo:no,surahName:d.namaLatin||d.nama||S[no-78]?.[0]||("Surah "+no),ayahNo:Number(a.nomorAyat||a.ayah||i+1),arab:a.teksArab||a.arab||a.text||"",latin:a.teksLatin||a.latin||"",translation:a.teksIndonesia||a.translation||""})).filter(a=>a.arab);
  }));
- const all=results.flat();
- if(all.length<500)throw new Error("Data ayat yang diterima belum lengkap");
- fullJuzAyat=all;return all;
+ const all=results.flat();if(all.length<500)throw new Error("Data ayat yang diterima belum lengkap");fullJuzAyat=all;return all;
 }
-function levelSurahRange(level){
- if(level==="Pemula")return [108,109,110,111,112,113,114];
- if(level==="Menengah")return Array.from({length:12},(_,i)=>i+103);
- if(level==="Mahir")return Array.from({length:22},(_,i)=>i+93);
- return JUZ30;
-}
-function makeFullVerseQuestions(all){
- const allowed=new Set(levelSurahRange($("level").value)),f=$("focus").value,groups={};
- all.forEach(a=>{if(f==="all"&&!allowed.has(a.surahNo))return;if(f!=="all"&&a.surahNo!==Number(f)+78)return;(groups[a.surahNo]??=[]).push(a)});
- const pairs=[];
- Object.values(groups).forEach(arr=>{arr.sort((a,b)=>a.ayahNo-b.ayahNo);for(let i=0;i<arr.length-1;i++)if(arr[i+1].ayahNo===arr[i].ayahNo+1)pairs.push({first:arr[i],next:arr[i+1]})});
- return shuffle(pairs).map(pair=>{
-   const {first,next}=pair,distractors=shuffle(all.filter(a=>a.arab&&!(a.surahNo===next.surahNo&&a.ayahNo===next.ayahNo)).map(a=>a.arab));
-   const hard=["Mahir","Hafiz Challenge"].includes($("level").value);
-   return {kind:"verse",prompt:hard?"Sambungkan potongan ayat berikut.":`Sambungkan potongan ayat berikut (${first.surahName}, ayat ${first.ayahNo}).`,arabic:first.arab,correct:next.arab,options:shuffle([next.arab,...distractors.slice(0,3)]),why:`Lanjutan: Surah ${first.surahName}, ayat ${next.ayahNo}.`,ref:`${first.surahNo}:${first.ayahNo}–${next.ayahNo}`};
+function getFocusSurah(){const f=$("focus").value;return f==="all"?null:Number(f)+78;}
+function makeMetaQuestions(kind,arr){
+ return arr.map(s=>{const ix=S.indexOf(s),correct=kind==="meaning"?s[2]:kind==="count"?String(s[1]):String(ix+78);
+ const pool=S.filter(x=>x!==s),others=shuffle(pool).slice(0,3).map(x=>kind==="meaning"?x[2]:kind==="count"?String(x[1]):String(S.indexOf(x)+78));
+ return {kind,correct,options:shuffle([correct,...others]),prompt:kind==="meaning"?`Apa arti nama Surah ${s[0]}?`:kind==="count"?`Berapa jumlah ayat Surah ${s[0]}?`:`Surah ${s[0]} berada pada urutan ke berapa dalam Juz 30?`,why:`${s[0]} adalah surah ke-${ix+78} dalam mushaf, terdiri dari ${s[1]} ayat. Arti nama: ${s[2]}.`};
  });
 }
-
-S.forEach((s,i)=>{let o=document.createElement("option");o.value=i;o.textContent=`${i+78}. ${s[0]}`;$("focus").append(o)});
-const shuffle=a=>{let b=[...a];for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b};
-function metaQuestions(kind,arr){return arr.map(s=>{let ix=S.indexOf(s),correct=kind==="meaning"?s[2]:kind==="count"?String(s[1]):String(ix+78),others=shuffle(arr.filter(x=>x!==s)).slice(0,3).map(x=>kind==="meaning"?x[2]:kind==="count"?String(x[1]):String(S.indexOf(x)+78));return{kind,correct,options:shuffle([correct,...others]),surah:s[0],prompt:kind==="meaning"?`Apa arti nama Surah ${s[0]}?`:kind==="count"?`Berapa jumlah ayat Surah ${s[0]}?`:`Surah ${s[0]} berada pada urutan ke berapa dalam Juz 30?`,why:`${s[0]} adalah surah ke-${ix+78} dalam mushaf, terdiri dari ${s[1]} ayat. Arti nama: ${s[2]}.`}})}
+function makeFullVerseQuestions(all){
+ const allowed=new Set(levelSurahRange($("level").value)),focus=getFocusSurah(),groups={};
+ all.forEach(a=>{if(focus!==null?a.surahNo!==focus:!allowed.has(a.surahNo))return;(groups[a.surahNo]??=[]).push(a);});
+ const pairs=[];Object.values(groups).forEach(arr=>{arr.sort((a,b)=>a.ayahNo-b.ayahNo);for(let i=0;i<arr.length-1;i++)if(arr[i+1].ayahNo===arr[i].ayahNo+1)pairs.push({first:arr[i],next:arr[i+1]});});
+ return shuffle(pairs).map(({first,next})=>{
+  const distractors=shuffle(all.filter(a=>a.arab&&!(a.surahNo===next.surahNo&&a.ayahNo===next.ayahNo)).map(a=>a.arab)).filter((v,i,a)=>a.indexOf(v)===i);
+  return {kind:"verse",prompt:`Sambungkan potongan ayat berikut (${first.surahName}, ayat ${first.ayahNo}).`,arabic:first.arab,latin:first.latin,correct:next.arab,options:shuffle([next.arab,...distractors.slice(0,3)]),why:`Lanjutan: Surah ${first.surahName}, ayat ${next.ayahNo}.${next.latin?" Bacaan Latin: "+next.latin:""}`,ref:`${first.surahNo}:${first.ayahNo}–${next.ayahNo}`};
+ });
+}
 async function buildBank(){
- let f=$("focus").value,arr=f==="all"?S:[S[+f]],m=$("mode").value,out=[];
- if(["mix","meaning","order","count"].includes(m)){(m==="mix"?["meaning","order","count"]:[m]).forEach(k=>out.push(...metaQuestions(k,arr)))}
- if(m==="verse"){const all=await loadJuz30Ayat();out=makeFullVerseQuestions(all)}
- if(["mix","translation"].includes(m)){V.forEach(v=>{if(f!=="all"&&arr[0][0]!==v.n)return;const opts=shuffle([v.n,...shuffle(S.filter(x=>x[0]!==v.n).map(x=>x[0])).slice(0,3)]);out.push({kind:"translation",prompt:`Potongan ayat ini berasal dari surah apa? (${v.r})`,arabic:v.a,correct:v.n,options:opts,why:`Surah ${v.n}. Makna awal ayat: ${v.m}`})})}
+ const f=getFocusSurah(),arr=f===null?S:[S[f-78]],mode=$("mode").value;let out=[];
+ if(["mix","meaning","order","count"].includes(mode)){(mode==="mix"?["meaning","order","count"]:[mode]).forEach(k=>out.push(...makeMetaQuestions(k,arr)));}
+ if(mode==="verse"){const all=await loadJuz30Ayat();out=makeFullVerseQuestions(all);}
+ if(mode==="translation"||mode==="mix"){
+  const all=await loadJuz30Ayat(),allowed=new Set(levelSurahRange($("level").value));
+  let sample=all.filter(a=>a.ayahNo<=2&&(f!==null?a.surahNo===f:mode==="mix"?allowed.has(a.surahNo):true));
+  sample=shuffle(sample).slice(0,Math.max(10,+$("qty").value));
+  sample.forEach(a=>{const right=S[a.surahNo-78]?.[0]||a.surahName;const opts=shuffle([right,...shuffle(S.filter((_,i)=>i!==a.surahNo-78)).slice(0,3).map(x=>x[0])]);out.push({kind:"translation",prompt:`Potongan ayat ini berasal dari surah apa? (${a.surahNo}:${a.ayahNo})`,arabic:a.arab,latin:a.latin,translation:a.translation,correct:right,options:opts,why:`Surah ${right}, ayat ${a.ayahNo}.`});});
+ }
  return shuffle(out);
 }
 async function begin(){
- try{$("begin").disabled=true;bank=await buildBank();if(!bank.length){alert("Belum ada soal untuk pilihan ini. Coba pilih Semua surah atau ubah mode.");return}
+ try{$("begin").disabled=true;bank=await buildBank();if(!bank.length){alert("Belum ada soal untuk pilihan ini. Coba ubah fokus atau mode.");return;}
  bank=bank.slice(0,+$("qty").value);at=0;points=0;$("home").classList.add("hide");$("results").classList.add("hide");$("memory").classList.add("hide");$("catalogPanel").classList.add("hide");$("quiz").classList.remove("hide");draw();
- }catch(err){alert("Bank ayat Juz 30 belum berhasil dimuat. Pastikan internet aktif, lalu coba lagi. Detail: "+err.message)}
- finally{$("begin").disabled=false}
+ }catch(err){alert("Bank ayat belum berhasil dimuat. Pastikan internet aktif, lalu coba lagi. Detail: "+err.message);}
+ finally{$("begin").disabled=false;}
 }
-function draw(){locked=false;let q=bank[at];$("progressText").textContent=`Soal ${at+1} dari ${bank.length}`;$("levelText").textContent=$("level").value;$("bar").style.width=(at/bank.length*100)+"%";$("kind").textContent=({meaning:"Arti nama surah",order:"Urutan surah",count:"Jumlah ayat",verse:"Sambung ayat",translation:"Identifikasi surah"})[q.kind];$("question").textContent=q.prompt;$("arabic").textContent=q.arabic||"";$("arabic").classList.toggle("hide",!q.arabic);$("answers").innerHTML="";q.options.forEach((v,i)=>{let b=document.createElement("button");b.className="answer";b.textContent="ABCD"[i]+". "+v;b.onclick=()=>choose(v,b);$("answers").append(b)});$("feedback").className="feedback";$("next").disabled=true;$("next").textContent=at===bank.length-1?"Lihat hasil":"Berikutnya";startClock()}
-function startClock(){clearInterval(timerId);seconds=+$("timer").value;$("time").textContent=seconds?`⏱ ${seconds}s`:"";if(!seconds)return;timerId=setInterval(()=>{$("time").textContent=`⏱ ${--seconds}s`;if(seconds<=0){clearInterval(timerId);if(!locked)choose(null,null)}},1000)}
-function choose(v,btn){if(locked)return;locked=true;clearInterval(timerId);let q=bank[at],ok=v===q.correct;if(ok)points++;[...$("answers").children].forEach(b=>{if(b.textContent.slice(3)===q.correct)b.classList.add("correct");else if(btn===b)b.classList.add("wrong");b.disabled=true});$("feedback").className="feedback show "+(ok?"good":"bad");$("feedback").innerHTML=`<b>${ok?"Masyaallah, tepat!":"Belum tepat."}</b> Jawaban: <b>${q.correct}</b><br>${q.why}`;$("next").disabled=false}
-$("next").onclick=()=>{at++;if(at<bank.length)draw();else finish()};$("end").onclick=finish;
-function finish(){clearInterval(timerId);$("quiz").classList.add("hide");let pct=Math.round(points/bank.length*100),old=JSON.parse(localStorage.getItem("qqv6")||'{"best":0,"sessions":0}');old.best=Math.max(old.best,pct);old.sessions++;localStorage.setItem("qqv6",JSON.stringify(old));refreshStats();$("results").classList.remove("hide");$("results").innerHTML=`<div class="result"><span class="tag">Sesi selesai</span><h2>Alhamdulillah, terus istiqamah belajar!</h2><div class="score">${points}/${bank.length}</div><p>Akurasi: <b>${pct}%</b></p><p>${pct>=90?"Luar biasa. Pertahankan murajaah!":pct>=70?"Bagus. Terus kuatkan materi yang belum dikuasai.":"Tidak apa-apa. Ulangi lagi dengan tenang dan bertahap."}</p><div class="actions" style="justify-content:center"><button onclick="begin()">Main lagi</button><button class="soft" onclick="goHome()">Menu utama</button></div></div>`}
-function goHome(){$("results").classList.add("hide");$("home").classList.remove("hide")}
-function refreshStats(){let x=JSON.parse(localStorage.getItem("qqv6")||'{"best":0,"sessions":0}');$("best").textContent=x.best+"%";$("sessions").textContent=x.sessions}
-function openMem(){mem=Math.floor(Math.random()*V.length);shown=false;$("home").classList.add("hide");$("quiz").classList.add("hide");$("results").classList.add("hide");$("catalogPanel").classList.add("hide");$("memory").classList.remove("hide");drawMem()}
-function drawMem(){let v=V[mem];$("memoryName").textContent="Surah "+v.n;$("memoryRef").textContent=v.r;$("memoryText").textContent=v.a;$("memoryMeaning").textContent=v.m;$("showNext").textContent="Buka potongan berikutnya";shown=false}
-$("showNext").onclick=()=>{if(!shown){$("memoryText").textContent=V[mem].a+" ۞ "+V[mem].b;$("showNext").textContent="Potongan sudah dibuka";shown=true}};
-$("newVerse").onclick=()=>{mem=(mem+1)%V.length;drawMem()};$("return").onclick=()=>{$("memory").classList.add("hide");$("home").classList.remove("hide")};
-$("begin").onclick=begin;$("hafalan").onclick=openMem;$("mode").onchange=()=>{if($("mode").value==="verse"||$("mode").value==="translation"){$("focus").value="all"}};
-$("catalog").onclick=()=>{$("catalogPanel").classList.remove("hide");$("surahList").innerHTML=S.map((s,i)=>`<div class="surahitem"><b>${i+78}. ${s[0]}</b><br>${s[1]} ayat · ${s[2]}</div>`).join("")};
-$("closeCatalog").onclick=()=>$("catalogPanel").classList.add("hide");
-refreshStats();
+function draw(){
+ locked=false;const q=bank[at];$("progressText").textContent=`Soal ${at+1} dari ${bank.length}`;$("levelText").textContent=$("level").value;$("bar").style.width=(at/bank.length*100)+"%";
+ $("kind").textContent=({meaning:"Arti nama surah",order:"Urutan surah",count:"Jumlah ayat",verse:"Sambung ayat",translation:"Makna ayat"})[q.kind]||"Latihan";
+ $("question").textContent=q.prompt;setVerseDisplay("arabic",q.arabic);setVerseDisplay("latin",q.latin);setVerseDisplay("translationText",q.translation);
+ $("answers").innerHTML="";q.options.forEach((v,i)=>{const b=document.createElement("button");b.className="answer";b.textContent="ABCD"[i]+". "+v;b.dataset.answer=v;b.onclick=()=>choose(v,b);$("answers").append(b);});
+ $("feedback").className="feedback";$("next").disabled=true;$("next").textContent=at===bank.length-1?"Lihat hasil":"Berikutnya";startClock();
+}
+function setVerseDisplay(id,value){const el=$(id);el.textContent=value||"";el.classList.toggle("hide",!value);}
+function startClock(){clearInterval(timerId);seconds=+$("timer").value;$("time").textContent=seconds?`⏱ ${seconds}s`:"";if(!seconds)return;timerId=setInterval(()=>{$("time").textContent=`⏱ ${--seconds}s`;if(seconds<=0){clearInterval(timerId);if(!locked)choose(null,null);}},1000);}
+function choose(value,btn){
+ if(locked)return;locked=true;clearInterval(timerId);const q=bank[at],ok=value===q.correct;if(ok)points++;
+ [...$("answers").children].forEach(b=>{if(b.dataset.answer===q.correct)b.classList.add("correct");else if(btn===b)b.classList.add("wrong");b.disabled=true;});
+ $("feedback").className="feedback show "+(ok?"good":"bad");$("feedback").textContent=`${ok?"Masyaallah, tepat!":"Belum tepat."} Jawaban: ${q.correct}. ${q.why||""}`;$("next").disabled=false;
+}
+$("next").onclick=()=>{at++;if(at<bank.length)draw();else finish();};$("end").onclick=finish;
+function finish(){if(!bank.length)return;clearInterval(timerId);$("quiz").classList.add("hide");const pct=Math.round(points/bank.length*100);let old;try{old=JSON.parse(localStorage.getItem("qqv7")||'{"best":0,"sessions":0}');}catch{old={best:0,sessions:0};}old.best=Math.max(old.best,pct);old.sessions++;localStorage.setItem("qqv7",JSON.stringify(old));refreshStats();$("results").classList.remove("hide");$("results").innerHTML=`<div class="result"><span class="tag">Sesi selesai</span><h2>Alhamdulillah, terus istiqamah belajar!</h2><div class="score">${points}/${bank.length}</div><p>Akurasi: <b>${pct}%</b></p><p>${pct>=90?"Luar biasa. Pertahankan murajaah!":pct>=70?"Bagus. Terus kuatkan materi yang belum dikuasai.":"Tidak apa-apa. Ulangi lagi dengan tenang dan bertahap."}</p><div class="actions" style="justify-content:center"><button id="playAgain">Main lagi</button><button class="soft" id="goHome">Menu utama</button></div></div>`;$("playAgain").onclick=begin;$("goHome").onclick=goHome;}
+function goHome(){$("results").classList.add("hide");$("home").classList.remove("hide");}
+function refreshStats(){let x;try{x=JSON.parse(localStorage.getItem("qqv7")||'{"best":0,"sessions":0}');}catch{x={best:0,sessions:0};}$("best").textContent=(x.best||0)+"%";$("sessions").textContent=x.sessions||0;}
+async function openMem(){
+ try{ $("hafalan").disabled=true;const all=await loadJuz30Ayat();mem=all[Math.floor(Math.random()*all.length)];latinVisible=true;
+ $("home").classList.add("hide");$("quiz").classList.add("hide");$("results").classList.add("hide");$("catalogPanel").classList.add("hide");$("memory").classList.remove("hide");drawMem();
+ }catch(err){alert("Data ayat belum berhasil dimuat. Pastikan internet aktif. "+err.message);}finally{$("hafalan").disabled=false;}
+}
+function drawMem(){if(!mem)return;$("memoryName").textContent=`Surah ${mem.surahName}`;$("memoryRef").textContent=`${mem.surahNo}:${mem.ayahNo}`;$("memoryText").textContent=mem.arab;$("memoryLatin").textContent=mem.latin||"Transliterasi tidak tersedia dari sumber data."; $("memoryMeaning").textContent=mem.translation||"Terjemahan tidak tersedia.";latinVisible=true;$("memoryLatin").classList.remove("hide");$("showNext").textContent="Sembunyikan bacaan Latin";}
+$("showNext").onclick=()=>{latinVisible=!latinVisible;$("memoryLatin").classList.toggle("hide",!latinVisible);$("showNext").textContent=latinVisible?"Sembunyikan bacaan Latin":"Tampilkan bacaan Latin";};
+$("newVerse").onclick=async()=>{try{const all=await loadJuz30Ayat();mem=all[Math.floor(Math.random()*all.length)];drawMem();}catch(err){alert(err.message);}};
+$("return").onclick=()=>{$("memory").classList.add("hide");$("home").classList.remove("hide");};
+$("begin").onclick=begin;$("hafalan").onclick=openMem;$("mode").onchange=()=>{if($("mode").value==="verse"||$("mode").value==="translation")$("focus").value="all";};
+$("catalog").onclick=()=>{$("catalogPanel").classList.remove("hide");$("surahList").innerHTML=S.map((s,i)=>`<div class="surahitem"><b>${i+78}. ${s[0]}</b><br>${s[1]} ayat · ${s[2]}</div>`).join("");};
+$("closeCatalog").onclick=()=>$("catalogPanel").classList.add("hide");refreshStats();
 </script></body></html>
